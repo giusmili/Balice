@@ -1,0 +1,111 @@
+/* 07/05/2020 author giusmili */
+
+/* reset */
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Lato',sans-serif; 
+	font-size: 1.7rem;
+	margin: 0;
+}
+*{
+	box-sizing: border-box;
+}
+ul, h1, h2, h3, p, figure, dl, dt, dd, ul, ol{
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+a, details, summary{
+	text-decoration: none;
+	outline: 0;
+}
+address{
+	font-style: normal;
+}
+button, input{
+	border: 0;
+}
+
+/* color theme */
+:root{
+	--color-Chico: #fff;
+	--color-Adams: #BF5353;
+	--color-Tanner: #000;
+	--color-OReilly: #2E343C;
+	--color-Britt: #525C69;
+	--color-Lee: #D7D3D2;
+	--color-Lick: #F5F5F5;
+}
+header {
+	overflow: hidden;
+}
+header, main{
+	max-width: 120.0rem;
+	margin:0 auto;
+}
+header .logo img{
+    width: 18.0rem;
+    
+}
+
+header nav{
+	padding: 1.3rem ;
+}
+
+nav ul li a{
+	color: var(--color-OReilly);
+	padding-bottom: 0.5rem;
+}
+nav  ul li a:hover, nav  ul .active{
+	border-bottom: 0.1rem solid var(--color-Tanner);
+	padding-bottom: 0.5rem;
+
+}
+header nav ul{
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1.0rem 0;
+	text-align: right;
+}
+header nav li{
+
+	display: inline;
+	text-align: center;
+	margin: 0 1.0rem;
+}
+header .logo{
+	display: block;
+	position: absolute;
+	width: auto;
+	float: left;
+	padding-top: 1rem;
+	text-align: left;
+}
+section{
+	position: relative;
+}
+section img{ /* susceptible à être modifié */
+	display: block;
+	width: 100%;
+	padding: 2.0rem 0 0 13rem;
+	opacity: 0.7;
+}
+section h1 span{
+	line-height: normal;
+	font-size: 1.6rem;
+}
+section h1{
+	position: absolute;
+	top: 40%;
+	left: 0;
+	width: 33rem;
+	font-size: 4.0rem;
+}
+
+section h1 time{
+	font-size: 2rem;
+	}
