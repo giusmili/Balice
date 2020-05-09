@@ -87,6 +87,7 @@ header .logo{
 }
 section{
 	position: relative;
+	margin-bottom: 6.0rem;
 }
 section img{ /* susceptible à être modifié */
 	display: block;
@@ -108,4 +109,21 @@ section h1{
 
 section h1 time{
 	font-size: 2rem;
-	}
+}
+
+/* colonnes texte et artistes*/
+
+section ul li{
+	display: inline-block;
+	width: calc(100% / 3 - 2.0rem);
+	vertical-align: top;
+}
+section ul li:nth-of-type(2){
+	margin:0 2.0rem;
+}
+section ul li > ul li{
+	display: list-item;
+}
+section ul li > ul li:nth-of-type(2){
+	margin: 0;
+}
