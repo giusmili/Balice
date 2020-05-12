@@ -221,17 +221,26 @@ section:nth-of-type(7) ul li:nth-of-type(1){
 .pictures ul li:nth-of-type(2){
 	margin:0 5.0rem;
 }
+/* Anthony css */
+.pictures .image-container img{
 
+	 max-width: 100%;
+	max-height: 100%;
+	margin-top: 100%;
+	transform: translateY(-100%); 
+}
 .pictures ul li figure .image-container{
 	width: calc(min(100vw, 1200px) / 3 - 5.0rem);
 	height: calc(min(100vw, 1200px) / 3 - 5.0rem);
 	overflow: hidden;
 
 }
-
+/*Anthony css end*/
 .pictures ul figure img{
 	padding: 0;
+
 }
+
 
 .pictures ul figure h3, .pictures ul figure h4{
 	font-size: 1.7rem;
