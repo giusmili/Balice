@@ -12,7 +12,7 @@ body{
 *{
 	box-sizing: border-box;
 }
-ul, h1, h2, h3, p, figure, dl, dt, dd, ul, ol{
+ul, h1, h2, h3,h4, p, figure, dl, dt, dd, ul, ol{
 	padding: 0;
 	list-style: none;
 	margin: 0;
@@ -37,6 +37,7 @@ button, input{
 	--color-Britt: #525C69;
 	--color-Lee: #D7D3D2;
 	--color-Lick: #F5F5F5;
+	--color-warning: rgba(200,0,0,1);
 }
 header {
 	overflow: hidden;
@@ -84,6 +85,7 @@ header .logo{
 	float: left;
 	padding-top: 1rem;
 	text-align: left;
+	z-index: 10;
 }
 section{
 	position: relative;
@@ -188,3 +190,72 @@ section:nth-of-type(5) p{
 	padding: 1.0rem;
 	margin: 0 auto;
 }
+section:nth-of-type(7) ul{
+	max-width: 60rem;
+	margin: 0 auto;
+}
+section:nth-of-type(7) ul li{
+	display: inline-block;
+	width: calc(100% / 2);
+	margin: 0;
+	vertical-align: middle;
+	text-align: left;
+}
+section:nth-of-type(7) ul li:nth-of-type(1){
+	width: 18%;
+	text-align: right;
+	margin-right: 1.5rem;
+	
+
+}
+/* oeuvres */
+
+.pictures ul figure img{
+	padding: 0;
+}
+
+.pictures ul figure h3, .pictures ul figure h4{
+	font-size: 1.7rem;
+	padding: 0.6rem 0;
+	color: var(--color-OReilly);
+	text-transform: uppercase;
+}
+.pictures ul figure h4{
+	margin: 1.0rem 0;
+}
+.pictures ul figure p{
+	font-size: 1.6rem;
+	color: var(--color-Britt);
+}
+.pictures ul figure figcaption a{
+	display: inline-block;
+	line-height: 4.0rem;
+	width: 15rem;
+	text-align: center;
+	color: var(--color-OReilly);
+	border: solid 0.1rem var(--color-Britt);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+
+.pictures ul figure figcaption a::after{
+	content:'\279E';
+}
+figure:first-child .warning{
+	color: var(--color-warning);
+}
+/* end oeuvres */
+
+/* @media screen and (max-width: 80rem) {
+	header nav{
+		display: none;
+	}
+	section{
+		height: 100vh;
+	}
+	section img{
+		height: 50vh;
+		padding: 6.0rem 0 0 6.0rem;
+	}
+}
+ */
