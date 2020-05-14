@@ -2,6 +2,7 @@
 
 /* reset */
 html{
+	scroll-behavior: smooth;
 	font-size: 62.5%;
 }
 body{
@@ -16,6 +17,7 @@ ul, h1, h2, h3,h4, p, figure, dl, dt, dd, ul, ol{
 	padding: 0;
 	list-style: none;
 	margin: 0;
+	font-weight: 400;
 }
 a, details, summary{
 	text-decoration: none;
@@ -27,6 +29,8 @@ address{
 button, input{
 	border: 0;
 }
+
+
 
 /* color theme */
 :root{
@@ -125,6 +129,7 @@ section ul li:nth-of-type(2){
 }
 section ul li > ul li{
 	display: list-item;
+	text-transform: uppercase;
 }
 section ul li > ul li:nth-of-type(2){
 	margin: 0;
@@ -283,7 +288,7 @@ figure:first-child .warning{
 
   @media screen and (max-width: 80rem) {
   	main{
-  		margin:0 1.0rem;
+  		margin:0 0.5rem;
   	}
 	header nav{
 		display: none;
@@ -291,13 +296,19 @@ figure:first-child .warning{
 	header div .logo img{
 		width: 45%;
 	}
-	 section{
-		/*display: flex;
-		flex-direction: column;
-		height: 50vh;*/
+	 .mobil-first img{
+		display: none;
+	}
+	.mobil-first{
+		padding: 1.0rem;
+		height: 100vh;
+		background: url("../asset/drapes_2019.png") no-repeat scroll 5.5rem 5.0rem / cover;
+		/* background-origin: content-box; */
 	}
 	section h1{
 		font-size: 7.5vw;
+		width: 60%;
+		padding-left: 1.0rem;
 	}
 	section ul li{
 	display: block;
