@@ -491,10 +491,5 @@ figure:first-child .warning{
 
 	
 }
-/* tablet */
-@media screen and (max-width: 1082px){
-	body{
-		margin:0 1.0rem;
-	}
-}
+
  
