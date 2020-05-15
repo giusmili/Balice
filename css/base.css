@@ -320,7 +320,7 @@ figure:first-child .warning{
 }
 .modale button{
 	display: block;
-	position: absolute;
+	position: fixed;
 	top: 1.7rem;
 	right: 1.7rem;
 	width: 3.0rem;
@@ -395,6 +395,99 @@ figure:first-child .warning{
 }
 
 /* end oeuvres */
+
+/* formulaire oeuvre */
+aside{
+	position: fixed;
+	top: 9.0rem;
+	left: 9.0;
+	z-index: 10;
+	max-width: 120.0rem;
+	background-color: var(--color-Chico);
+	padding:2.0rem;
+	border: solid 0.1rem #ccc;
+	display: none; /* pour voir le fenêtre il faut commenter la propriété display */
+}
+
+aside ul,aside ul li:nth-of-type(2){
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	
+
+}
+aside ul li:nth-of-type(2) a{
+	position: absolute;
+	right: 6.0rem;
+	top: 5.0rem;
+	width: 3.0rem;
+	height: 3.0rem;
+	line-height: 2.5rem;
+	border: solid 0.1rem var(--color-Chico);
+	color: var(--color-Chico);
+	z-index: 10;
+	text-align: center;
+}
+aside ul li:nth-of-type(1){
+	width: 30%;
+	margin-right: 2.0rem;
+
+}
+aside ul li:last-child{
+	width: 70%;
+	background-color: var(--color-OReilly);
+}
+aside ul li:nth-of-type(1) figure figcaption p{
+	margin-bottom: 1.5rem;
+}
+aside ul li:nth-of-type(1) figure figcaption h3{
+	margin-top: 1.5rem;
+}
+aside ul li:nth-of-type(1) figure img{
+	display: block;
+	width: 100%;
+}
+aside ul li:nth-of-type(2) section:nth-of-type(1){
+	width: 40%;
+	}
+aside ul li:nth-of-type(2) section:nth-of-type(1) h2{
+	color: #fafafa;
+	text-align: center;
+}
+aside ul li:nth-of-type(2) section:nth-of-type(2){
+	padding-top: 4.0rem;
+	width: 60%;
+}
+aside ul li:nth-of-type(2) section form input, aside ul li:nth-of-type(2) section form textarea{
+	border: solid 0.1rem var(--color-Britt);
+	display: block;
+	width: 100%;
+	line-height: 3.5rem;
+	margin-bottom: 1.0rem;
+	width: 60%;
+	background-color: var(--color-OReilly);
+	color: #fff;
+	resize: none;
+	
+}
+aside ul li:nth-of-type(2) section form label{
+	color: var(--color-Chico);
+	padding: 0.5rem;
+	display: inline-block;
+}
+aside ul li:nth-of-type(2) section form input[type="submit"]{
+	width: 15rem;
+	background-color: var(--color-Chico);
+	text-transform: uppercase;
+	background: var(--color-OReilly);
+	color: var(--color-Chico);
+	margin-top: 3.0rem;
+	cursor: pointer;
+}
+
+
+
 /* mobile */
 
   @media screen and (max-width: 80rem){
