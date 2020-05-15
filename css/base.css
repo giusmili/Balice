@@ -88,7 +88,6 @@ header .logo{
 	display: block;
 	position: absolute;
 	width: auto;
-	float: left;
 	padding-top: 1rem;
 	text-align: left;
 	z-index: 10;
@@ -110,7 +109,6 @@ section h1 span{
 section h1{
 	position: absolute;
 	top: 40%;
-	left: 0;
 	width: 33rem;
 	font-size: 4.0rem;
 }
@@ -135,6 +133,11 @@ section ul li > ul li{
 	line-height: 3.0rem;
 	font-weight: 300;
 	width: 38%;
+}
+section:nth-of-type(2) ul li p,
+section:nth-of-type(3) ul li p,
+section:nth-of-type(4) ul li p,section:nth-of-type(5) *{
+	line-height: 2.5rem;
 }
 section ul li > ul li:nth-of-type(2){
 	margin: 0;
@@ -301,8 +304,6 @@ figure:first-child .warning{
 	display: flex;
 	padding: 2.0rem;
 	flex-direction: row;
-	flex-grow: 1;
-	flex-shrink: 1;
 	background-color: var(--color-Chico);
 	z-index: -1;
 	opacity: 0;
@@ -316,6 +317,7 @@ figure:first-child .warning{
 				
 }
 .modale button{
+	display: block;
 	position: absolute;
 	top: 1.7rem;
 	right: 1.7rem;
@@ -325,6 +327,7 @@ figure:first-child .warning{
 	border: solid 0.1rem var(--color-Tanner);
 	font-size: 1.7rem;
 	cursor: pointer;
+	text-align: center;
 
 }
 .modale .inner-picture{
@@ -487,5 +490,11 @@ figure:first-child .warning{
 	}
 
 	
-} 
+}
+/* tablet */
+@media screen and (max-width: 1082px){
+	body{
+		margin:0 1.0rem;
+	}
+}
  
