@@ -298,7 +298,7 @@ figure:first-child .warning{
 .modale{
 	top: 8%;
 	left: 8%;
-	width: 120.00rem;
+	max-width: 120.00rem;
 	position: absolute;
 	border: solid 0.1rem #ccc;
 	display: flex;
@@ -310,10 +310,12 @@ figure:first-child .warning{
 	box-shadow: 0 0 1.0rem #ccc;
 	transform: translate(-8%,-8%);
 	transition-duration: 0.5s;
+	
 }
 .modal_open{
 	opacity: 1;
-	z-index: 10;	
+	z-index: 10;
+	
 				
 }
 .modale button{
@@ -367,8 +369,8 @@ figure:first-child .warning{
 	color: var(--color-Britt);
 }
 .inner-legend ul li:last-child {
-	margin-top: 2.0rem;
-	transform: translateY(5.6rem);
+	margin-top: 3.0rem;
+	
 }
 .inner-legend ul li:last-child > .btn-modal{
 		
@@ -395,7 +397,7 @@ figure:first-child .warning{
 /* end oeuvres */
 /* mobile */
 
-  @media screen and (max-width: 80rem) {
+  @media screen and (max-width: 80rem){
   	main{
   		margin:0 0.5rem;
   	}
@@ -487,6 +489,9 @@ figure:first-child .warning{
 	}
 	.pictures ul figure figcaption a{
 		margin-bottom: 0.5rem;
+	}
+	.modale{
+		display: none;
 	}
 
 	
